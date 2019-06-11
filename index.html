@@ -1,0 +1,191 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+  <nav class="navbar navbar-expand-sm navbar-light justify-content-end fixed-top" id="navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+      <ul class="navbar-nav" id="nav-links">
+        <li class="nav-item"><a class="nav-link active" type="button" href="#welcome-section">Home</a></li>
+        <li class="nav-item"><a class="nav-link" type="button" href="#projectsJumpTo">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" type="button" href="#contactsJumpTo">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <div id="welcome-section">
+      <div class="words-section">
+        <h1>Hi, I'm Heterosis!</hi>
+          <p class="mt-2">在成為前端工程師的路上不斷努力</p>
+      </div>
+    </div>
+
+    <div id="modal-area">
+      <div class="modal fade" id="Modal-todolist">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> React 實做待辦清單</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <figure>
+                <a href="https://s.codepen.io/Heterosis/debug/WBYMVE/XxrVwaRQYmEA" target="_blank"><img class="modal-img" src="https://screenshot.codepen.io/2021581.WBYMVE.6cf3d8d7-4c03-4315-8845-387f217daa27.png" alt="Todo List"></a>
+                <figcaption>
+                  <p><a href="https://s.codepen.io/Heterosis/debug/WBYMVE/XxrVwaRQYmEA" target="_blank">點此觀看作品</a></p>
+                  <p>可傳入一陣列作為參數，將其中的待辦事項名稱與是否完成繪製為待辦事項清單，並通過操控 State 達成新增、完成、修改及刪除待辦事項。</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-pm25-datatables">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title"> PM2.5 濃度表格</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <figure>
+                <a href="https://s.codepen.io/Heterosis/debug/yWQpGO/mVkbGpZLdzvM" target="_blank"><img class="modal-img" src="https://github.com/Heterosis/parking-lot-off-street-in-taoyuan/raw/master/img/CodePen%20-%20PM2.5%20%E8%A1%A8%E6%A0%BC%20-%20DataTables.png" alt="PM2.5 Form"></a>
+                <figcaption>
+                  <p><a href="https://s.codepen.io/Heterosis/debug/yWQpGO/mVkbGpZLdzvM" target="_blank">點此觀看作品</a></p>
+                  <p>透過 jQuery 以 JSONP 方式即時取得 PM2.5 濃度資料繪製為表格，並以 DataTables 達成表格之搜尋、排序等功能。</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-parking-lots">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">桃園市路外停車場地圖</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <figure>
+                <a href="https://s.codepen.io/Heterosis/debug/KLEoVg/vWkRwadQnPqM" target="_blank"><img class="modal-img" src="https://screenshot.codepen.io/2021581.KLEoVg.4dfdb239-467a-499e-bf76-539e9504016b.png" alt="Parking Lots Map of Taoyuan"></a>
+                <figcaption>
+                  <p><a href="https://s.codepen.io/Heterosis/debug/KLEoVg/vWkRwadQnPqM" target="_blank">點此觀看作品</a></p>
+                  <p>利用 Google Maps JavaScript API 顯示桃園市之路外停車場地點及其收費資訊。</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-tic-tac-toe">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">井字遊戲</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <figure>
+                <a href="https://s.codepen.io/Heterosis/debug/rgdMbN/LDkmdPoXxywA" target="_blank"><img class="modal-img" src="https://screenshot.codepen.io/2021581.rgdMbN.e1f708a7-7a12-455a-be79-bc7b0966e7e2.png" alt="Tic Tac Toe"></a>
+                <figcaption>
+                  <p><a href="https://s.codepen.io/Heterosis/debug/rgdMbN/LDkmdPoXxywA" target="_blank">點此觀看作品</a></p>
+                  <p>以 React 實做井字遊戲，可判斷勝負，並可悔棋至指定歷史步數。</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-random-quote-machine">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">隨機引言</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <figure>
+                <a href="https://s.codepen.io/Heterosis/debug/pGqdoe/PBrNWNJyybjA" target="_blank"><img class="modal-img" src="https://github.com/Heterosis/parking-lot-off-street-in-taoyuan/raw/master/img/Screenshot_2019-06-10%20CodePen%20-%20Random%20Quote%20Machine.png" alt="Random Quote Machine"></a>
+                <figcaption>
+                  <p><a href="https://s.codepen.io/Heterosis/debug/pGqdoe/PBrNWNJyybjA" target="_blank">點此觀看作品</a></p>
+                  <p>利用 Quotes on Design 提供之 API 產生隨機引言，並可在 Twitter 及 Facebook 上進行分享。</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projectsJumpTo"></div>
+    <div data-aos="flip-left" id="projects">
+      <h2>Here are some of my works </h2>
+      <div id="project_area">
+
+        <button type="button" class="btn project-title" data-toggle="modal" data-target="#Modal-todolist">
+          <figure>
+            <img src="https://screenshot.codepen.io/2021581.WBYMVE.6cf3d8d7-4c03-4315-8845-387f217daa27.png" alt="Todo List">
+            <figcaption> React 實做待辦清單</figcaption>
+          </figure>
+        </button>
+
+        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-pm25-datatables">
+          <figure>
+            <img src="https://github.com/Heterosis/parking-lot-off-street-in-taoyuan/raw/master/img/CodePen%20-%20PM2.5%20%E8%A1%A8%E6%A0%BC%20-%20DataTables.png" alt="PM2.5 Form">
+            <figcaption> PM2.5 濃度表格</figcaption>
+          </figure>
+        </button>
+
+        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-parking-lots">
+          <figure>
+            <img src="https://screenshot.codepen.io/2021581.KLEoVg.4dfdb239-467a-499e-bf76-539e9504016b.png" alt="Parking Lots Map of Taoyuan">
+            <figcaption>桃園市路外停車場地圖</figcaption>
+          </figure>
+        </button>
+
+        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-tic-tac-toe">
+          <figure>
+            <img src="https://screenshot.codepen.io/2021581.rgdMbN.e1f708a7-7a12-455a-be79-bc7b0966e7e2.png" alt="Tic Tac Toe">
+            <figcaption>井字遊戲</figcaption>
+          </figure>
+        </button>
+
+        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-random-quote-machine">
+          <figure>
+            <img src="https://github.com/Heterosis/parking-lot-off-street-in-taoyuan/raw/master/img/Screenshot_2019-06-10%20CodePen%20-%20Random%20Quote%20Machine.png" alt="Random Quote Machine">
+            <figcaption>隨機引言</figcaption>
+          </figure>
+        </button>
+
+      </div>
+    </div>
+
+    <div id="contactsJumpTo"></div>
+    <div id="contacts" data-aos="fade">
+      <h3>You can find me here</h3>
+      <a type="button" class="btn" href="https://github.com/Heterosis" target="_blank"><i class="icon fab fa-github"></i></a>
+      <a type="button" class="btn" href="https://www.facebook.com/YouTing.Jhang" target="_blank"><i class="icon fab fa-facebook"></i></a>
+      <a type="button" class="btn" href="mailto:a3817001@gmail.com" target="_blank"><i class="icon fas fa-envelope"></i></a>
+    </div>
+
+  </div>
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>>
