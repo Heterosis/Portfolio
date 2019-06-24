@@ -4,14 +4,18 @@
 <head>
   <title>Heterosis' Personal Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js">
+  </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -31,189 +35,202 @@
   <div>
     <div id="welcome-section">
       <div class="words-section">
-        <h1>Hi, I'm Heterosis!</hi>
+        <div class="animated infinite pulse">
+          <h1>Hi, I'm Heterosis!</h1>
           <p class="mt-2">在成為前端工程師的路上不斷努力</p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div id="modal-area">
-      <div class="modal fade" id="Modal-todolist">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"> React 實做待辦清單</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/To-Do-List-with-React/" target="_blank"><img class="modal-img" src="img/react-todolist.png" alt="Todo List"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/To-Do-List-with-React/" target="_blank">點此觀看作品</a></p>
-                  <p>可傳入一陣列作為參數，將其中的待辦事項名稱與是否完成繪製為待辦事項清單，並通過操控 State 達成新增、完成、修改及刪除待辦事項。</p>
-                </figcaption>
-              </figure>
-            </div>
+  <div id="modal-area">
+    <div class="modal fade" id="Modal-todolist">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"> React 實做待辦清單</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-pm25-datatables">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title"> PM2.5 濃度表格</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/PM2.5-Form-DataTables/" target="_blank"><img class="modal-img" src="img/pm25-form-datatables.png" alt="PM2.5 Form"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/PM2.5-Form-DataTables/" target="_blank">點此觀看作品</a></p>
-                  <p>透過 jQuery 以 JSONP 方式即時取得 PM2.5 濃度資料繪製為表格，並以 DataTables 達成表格之搜尋、排序等功能。</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-parking-lots">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">桃園市路外停車場地圖</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/Off-Street-Parking-Lots-in-Taoyuan/" target="_blank"><img class="modal-img" src="img/parking-lots-map-of-taoyuan.png" alt="Parking Lots Map of Taoyuan"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/Off-Street-Parking-Lots-in-Taoyuan/" target="_blank">點此觀看作品</a></p>
-                  <p>利用 Google Maps JavaScript API 顯示桃園市之路外停車場地點及其收費資訊。</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-tic-tac-toe">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">井字遊戲</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/Tic-Tac-Toe/" target="_blank"><img class="modal-img" src="img/tic-tac-toe.png" alt="Tic Tac Toe"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/Tic-Tac-Toe/" target="_blank">點此觀看作品</a></p>
-                  <p>以 React 實做井字遊戲，可判斷勝負，並可悔棋至指定歷史步數。</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-random-quote-machine">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">隨機引言</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/Random-Quote-Machine/" target="_blank"><img class="modal-img" src="img/random-quote-machine.png" alt="Random Quote Machine"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/Random-Quote-Machine/" target="_blank">點此觀看作品</a></p>
-                  <p>利用 Quotes on Design 提供之 API 產生隨機引言，並可在 Twitter 及 Facebook 上進行分享。</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modal-layout-practice">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">網站切版</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <figure>
-                <a href="https://heterosis.github.io/Layout-Practice/" target="_blank"><img class="modal-img" src="img/layout-practice.png" alt="Layout Practice"></a>
-                <figcaption>
-                  <p><a href="https://heterosis.github.io/Layout-Practice/" target="_blank">點此觀看作品</a></p>
-                  <p>運用 Bootstrap 進行網站切版。</p>
-                </figcaption>
-              </figure>
-            </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/To-Do-List-with-React/" target="_blank"><img class="modal-img"
+                  src="img/react-todolist.png" alt="Todo List"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/To-Do-List-with-React/" target="_blank">點此觀看作品</a></p>
+                <p>可傳入一陣列作為參數，將其中的待辦事項名稱與是否完成繪製為待辦事項清單，並通過操控 State 達成新增、完成、修改及刪除待辦事項。</p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </div>
-
-    <div id="projectsJumpTo"></div>
-    <div data-aos="flip-left" id="projects">
-      <h2>Here are some of my works </h2>
-      <div id="project_area">
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#Modal-todolist">
-          <figure>
-            <img src="img/react-todolist.png" alt="Todo List">
-            <figcaption> React 實做待辦清單</figcaption>
-          </figure>
-        </button>
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-pm25-datatables">
-          <figure>
-            <img src="img/pm25-form-datatables.png" alt="PM2.5 Form">
-            <figcaption> PM2.5 濃度表格</figcaption>
-          </figure>
-        </button>
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-parking-lots">
-          <figure>
-            <img src="img/parking-lots-map-of-taoyuan.png" alt="Parking Lots Map of Taoyuan">
-            <figcaption>桃園市路外停車場地圖</figcaption>
-          </figure>
-        </button>
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-tic-tac-toe">
-          <figure>
-            <img src="img/tic-tac-toe.png" alt="Tic Tac Toe">
-            <figcaption>井字遊戲</figcaption>
-          </figure>
-        </button>
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-random-quote-machine">
-          <figure>
-            <img src="img/random-quote-machine.png" alt="Random Quote Machine">
-            <figcaption>隨機引言</figcaption>
-          </figure>
-        </button>
-
-        <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-layout-practice">
-          <figure>
-            <img src="img/layout-practice.png" alt="Layout Practice">
-            <figcaption>網站切版</figcaption>
-          </figure>
-        </button>
-
+    <div class="modal fade" id="modal-pm25-datatables">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"> PM2.5 濃度表格</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/PM2.5-Form-DataTables/" target="_blank"><img class="modal-img"
+                  src="img/pm25-form-datatables.png" alt="PM2.5 Form"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/PM2.5-Form-DataTables/" target="_blank">點此觀看作品</a></p>
+                <p>透過 jQuery 以 JSONP 方式即時取得 PM2.5 濃度資料繪製為表格，並以 DataTables 達成表格之搜尋、排序等功能。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div id="contactsJumpTo"></div>
-    <div id="contacts" data-aos="fade">
-      <h3>You can find me here</h3>
-      <a type="button" class="btn" href="https://github.com/Heterosis" target="_blank"><i class="icon fab fa-github"></i></a>
-      <a type="button" class="btn" href="https://www.facebook.com/YouTing.Jhang" target="_blank"><i class="icon fab fa-facebook"></i></a>
-      <a type="button" class="btn" href="mailto:a3817001@gmail.com" target="_blank"><i class="icon fas fa-envelope"></i></a>
+    <div class="modal fade" id="modal-parking-lots">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">桃園市路外停車場地圖</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/Off-Street-Parking-Lots-in-Taoyuan/" target="_blank"><img
+                  class="modal-img" src="img/parking-lots-map-of-taoyuan.png" alt="Parking Lots Map of Taoyuan"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/Off-Street-Parking-Lots-in-Taoyuan/" target="_blank">點此觀看作品</a>
+                </p>
+                <p>利用 Google Maps JavaScript API 顯示桃園市之路外停車場地點及其收費資訊。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="modal fade" id="modal-tic-tac-toe">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">井字遊戲</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/Tic-Tac-Toe/" target="_blank"><img class="modal-img"
+                  src="img/tic-tac-toe.png" alt="Tic Tac Toe"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/Tic-Tac-Toe/" target="_blank">點此觀看作品</a></p>
+                <p>以 React 實做井字遊戲，可判斷勝負，並可悔棋至指定歷史步數。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-random-quote-machine">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">隨機引言</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/Random-Quote-Machine/" target="_blank"><img class="modal-img"
+                  src="img/random-quote-machine.png" alt="Random Quote Machine"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/Random-Quote-Machine/" target="_blank">點此觀看作品</a></p>
+                <p>利用 Quotes on Design 提供之 API 產生隨機引言，並可在 Twitter 及 Facebook 上進行分享。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-layout-practice">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">網站切版</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <figure>
+              <a href="https://heterosis.github.io/Layout-Practice/" target="_blank"><img class="modal-img"
+                  src="img/layout-practice.png" alt="Layout Practice"></a>
+              <figcaption>
+                <p><a href="https://heterosis.github.io/Layout-Practice/" target="_blank">點此觀看作品</a></p>
+                <p>運用 Bootstrap 進行網站切版。</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="projectsJumpTo"></div>
+  <div data-aos="flip-left" id="projects">
+    <h2>Here are some of my works </h2>
+    <div id="project_area">
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#Modal-todolist">
+        <figure>
+          <img src="img/react-todolist.png" alt="Todo List">
+          <figcaption> React 實做待辦清單</figcaption>
+        </figure>
+      </button>
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-pm25-datatables">
+        <figure>
+          <img src="img/pm25-form-datatables.png" alt="PM2.5 Form">
+          <figcaption> PM2.5 濃度表格</figcaption>
+        </figure>
+      </button>
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-parking-lots">
+        <figure>
+          <img src="img/parking-lots-map-of-taoyuan.png" alt="Parking Lots Map of Taoyuan">
+          <figcaption>桃園市路外停車場地圖</figcaption>
+        </figure>
+      </button>
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-tic-tac-toe">
+        <figure>
+          <img src="img/tic-tac-toe.png" alt="Tic Tac Toe">
+          <figcaption>井字遊戲</figcaption>
+        </figure>
+      </button>
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-random-quote-machine">
+        <figure>
+          <img src="img/random-quote-machine.png" alt="Random Quote Machine">
+          <figcaption>隨機引言</figcaption>
+        </figure>
+      </button>
+
+      <button type="button" class="btn project-title" data-toggle="modal" data-target="#modal-layout-practice">
+        <figure>
+          <img src="img/layout-practice.png" alt="Layout Practice">
+          <figcaption>網站切版</figcaption>
+        </figure>
+      </button>
+
+    </div>
+  </div>
+
+  <div id="contactsJumpTo"></div>
+  <div id="contacts" data-aos="fade">
+    <h3>You can find me here</h3>
+    <a type="button" class="btn" href="https://github.com/Heterosis" target="_blank"><i
+        class="icon fab fa-github"></i></a>
+    <a type="button" class="btn" href="https://www.facebook.com/YouTing.Jhang" target="_blank"><i
+        class="icon fab fa-facebook"></i></a>
+    <a type="button" class="btn" href="mailto:a3817001@gmail.com" target="_blank"><i
+        class="icon fas fa-envelope"></i></a>
+  </div>
 
   </div>
   <script src="js/main.js"></script>
 
 </body>
 
-</html>>
+</html>
